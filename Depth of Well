@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//#define G 9.81
+
+int main()
+{
+    float t1,t2,t3,t,G,d;
+    scanf("%f %f %f", &t1, &t2, &t3);
+    t=(t1+t2+t3)/(3.0);
+    G=9.81;
+    d=(0.5)*(G*t*t);
+    printf("The depth of the well = %.1f m", d);
+
+
+
+}
