@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+{
+
+   int l;
+   int m;
+   int n;
+   float tin_no;
+   float area;
+   float s;
+   float area_per_tin;
+   scanf("l=%im m=%im n=%im \n", &l, &m, &n);
+   scanf("cover=%fm", &area_per_tin);
+   s = (l+m+n)/2;
+   area = sqrt(s*(s-l)*(s-m)*(s-n));
+   tin_no = area/area_per_tin;
+
+
+
+   printf("You need %.2f tins\n", tin_no);
+
+
+   return 0;
+}
