@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+{
+
+   int d;
+   int l;
+   int c;
+   float circum;
+   int no;
+   int total_cost;
+   scanf("%d %d %dm", &d, &c, &l);
+   circum =PI*d;
+
+   no=ceil(circum / l);
+
+   total_cost=no*c;
+
+   printf("Number of rolls required is %d\n", no);
+   printf("Total Cost is %d\n", total_cost);
+
+   return 0;
+}
