@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+{
+
+   float p;
+   float APR;
+   float v1, v2, v3;
+   scanf("loan=%f euro apr=%f", &p, &APR);
+   v1=p*(1+ ((APR/100) * 30) /365);
+   v2=p*(1+ ((APR/100) * 60) /365);
+   v3=p*(1+ ((APR/100) * 90) /365);
+ if (APR < 0 || APR > 100)
+    {
+        printf("APR must be in the range [0.0, 100.0]\n");
+
+
+
+
+}
+else
+
+{
+
+
+
+   printf("The maturity value after 30 days = %.2f Euro \n", v1);
+   printf("The maturity value after 60 days = %.2f Euro \n", v2);
+   printf("The maturity value after 90 days = %.2f Euro", v3);
+}
+
+
+   return 0;
+}
