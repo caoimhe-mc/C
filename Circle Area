@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+{
+   float xa;
+   float ya;
+   float xb;
+   float yb;
+   float area,diameter;
+   scanf("x=%f y=%f\n", &xa, &ya);
+   scanf("x=%f y=%f\n", &xb, &yb);
+
+diameter = sqrt((yb-ya)*(yb-ya)+((xb-xa)*(xb-xa)));
+area=(PI)*((diameter/2)*(diameter/2));
+
+printf("Distance between A-B: %.2f \n", diameter);
+printf("Circle area: %.2f", area);
+
+
+
+   return 0;
+}
