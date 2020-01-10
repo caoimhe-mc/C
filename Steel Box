@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+
+{
+   float l_box;
+   float w_box;
+   float h_box;
+   float c;
+   float area,waste,costTotal, price;
+   scanf("length=%f height=%f width=%f cost=%f", &l_box, &h_box, &w_box, &c);
+
+
+
+ if (l_box <= 0 || w_box <= 0 || h_box <= 0 || c<=0)
+{
+
+    printf("Values must be larger than 0\n");
+
+}
+
+else
+
+{
+        area= (2.0)*((l_box*h_box)+(l_box*w_box)+(h_box*w_box));
+        price=area*c;
+        waste=area*(2.0/100)*c;
+        costTotal=waste+price;
+        printf("Overall cost: %.2f Euro\n", costTotal);
+        printf("Wastage cost: %.2f Euro\n", waste);
+
+}
+
+   return 0;
+}
