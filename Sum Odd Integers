@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+
+{
+    int n;
+    int S=0;
+    int i;
+    scanf("%i",&n);
+        for (i=1;i<=n;i+=2)
+        {
+            S=S+i;
+        }
+    printf("For n = %i the sum is %i", n, S);
+
+
+
+   return 0;
+}
