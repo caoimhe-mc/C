@@ -1,0 +1,25 @@
+int main()
+{
+    int i;
+    float F;
+    int C;
+    int Ci;
+    int Cf;
+
+
+    scanf("start=%i end=%i", &Ci, &Cf);
+    printf("deg C |  deg F\n");
+    printf("===============\n");
+    for(C=Ci; C<Cf; C++)
+    {
+        if(C%5 == 0)
+        {
+            F=((9/5.0)*C)+32;
+
+            printf("%i      | ", C);
+            printf("%.2f\n", F);
+
+        }
+    }
+
+}
