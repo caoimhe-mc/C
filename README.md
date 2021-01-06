@@ -1,2 +1,2 @@
 # C-Basics
-The following files contain tasks that were completed using C. The level of diffiuclty of the tasks completed increases throughtout the repository. 
+The following files were completed while taking a level one module called 'Computer Science for Engineers'.
