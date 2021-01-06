@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x;
+    int i;
+    int y;
+
+    scanf("%d", &x);
+
+    while(x!=-1)
+    {
+            if(x<13)
+            {
+                printf("    %d Times Tables\n", x);
+                printf("___________________________\n");
+
+                for(i=0;i<13;i++)
+                {
+                    y=x*i;
+                    printf("%d x %d = %d\n", x, i, y);
+                }
+                printf("___________________________\n");
+            }
+            else
+            {
+                printf("number is >=13!\n");
+            }
+            scanf("%d", &x);
+    }
+}
