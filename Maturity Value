@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1416
+
+int main()
+{
+    float v;
+    double c;
+    float n;
+
+    scanf("%lf", &c);
+    printf("_________________________________\n");
+    printf("Year    Maturity Value\n");
+    printf("---------------------------------\n");
+
+    for(n=0;n<=30;n+=5)
+    {
+        v=c*pow((1+0.05),n);
+        printf("%.0f    %.2f\n", n, v);
+    }
+    printf("---------------------------------");
+
+
+
+    return 0;
+}
