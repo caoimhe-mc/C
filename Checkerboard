@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int input;
+    int i;
+    int j=1;
+    int k;
+
+    scanf("size=%d", &input);
+
+    if(input <1 || input >7)
+    {
+        printf("The input must be in the range [1;7].");
+    }
+
+    else
+    {
+        while(j<=input)
+        {
+            if(j%2!=0)
+            {
+                for(i=1;i<=input;i++)
+                {
+                    printf("#O");
+                }
+                printf("\n");
+                j++;
+            }
+            else if(j%2==0)
+            {
+                for(k=1;k<=input;k++)
+                {
+                    printf("O#");
+                }
+                printf("\n");
+                j++;
+            }
+        }
+    }
+}
