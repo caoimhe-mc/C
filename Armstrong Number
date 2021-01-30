@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int to_pow(int base, int exponent)
+{
+    int result = 1, i;
+    for (i = 0; i < exponent; i++)
+    {
+        result = result*base;
+    }
+    return result;
+}
+
+int is_armstrong(int input)
+{
+    int ans,amount,division,mult,in, in2;
+    in = input;
+    in2 = input;
+    ans=0;
+    amount = 0;
+
+    while(in != 0)
+    {
+        in/=10;
+        amount++; //num digits
+    }
+
+
+    for (int j = 0; j < amount; j++)
+    {
+        division=in2%10;
+        mult=to_pow(division,amount);
+        ans=ans+mult;
+        in2/=10;
+    }
+
+
+    if(ans == input)
+    {
+      return 1;
+    }
+
+    else
+    {
+        return 0;
+    }
+
+}
+
+int main()
+{
+    int input, output;
+    scanf("%d", &input);
+    printf("input = %d \n", input);
+    output=is_armstrong(input);
+    printf("%d", output);
+    return 0;
+}
