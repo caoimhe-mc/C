@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/*e.g number 47*/
+
+int main()
+{
+    int input;
+    int division;
+    int ans=0;
+
+    scanf("%d", &input);
+
+    while(input != 0)
+    {
+        division=input%10; 
+        ans=ans+division; 
+        input=input/10;   
+    }
+    printf("%d", ans);
+
+    return 0;
+}
