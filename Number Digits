@@ -1,0 +1,21 @@
+int number_digits(int input)
+{
+
+    int ans=0;
+
+
+    while(input !=0)
+        {
+
+            input/=10;
+            ans++;
+
+
+        }
+    return ans;
+}
+
+int main()
+{
+    printf("36763 becomes %d\n", number_digits(36763));
+}
