@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void is_perfect(int input)
+{
+    int i;
+    int sum=0;
+    for(i=1;i<=input/2;i++)
+    {
+        if(input%i==0)
+        {
+            sum=sum+i;
+        }
+
+    }
+
+    if(input==sum)
+        {
+            printf("%d is a perfect number.", input);
+        }
+
+        else
+        {
+            printf("%d is not a perfect number.", input);
+        }
+
+    return 0;
+
+}
+
+
+int main()
+{
+    is_perfect(6);
+}
