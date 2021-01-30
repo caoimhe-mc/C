@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int getLCM(int val1, int val2)
+{
+   float x;
+   int max, min;
+
+   //scanf("%d %d", &val_1, &val_2);
+
+   if(val1>val2)
+   {
+       max=val1;
+       min=val2;
+   }
+
+   else if(val2>val1)
+   {
+       max=val2;
+       min=val1;
+   }
+
+   int i=max;
+   for(i;i<=5000;i+=max)
+   {
+       if(i%min==0)
+        {
+            break;
+        }
+   }
+   return i;
+}
+
+int main()
+{
+    int val1, val2;
+    scanf("%d %d", &val1, &val2);
+    printf("%d", getLCM(val1,val2));
+    return 0;
+}
