@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float min(float a, float b)
+{
+	if (a > b)
+    {
+		return b;
+	}
+
+	return a;
+}
+
+int main() {
+
+	float i, j;
+
+	scanf("%f %f", &i, &j);
+
+	while (! (i == -1 && j == -1))
+    {
+
+		printf("%.1f\n", min(i, j));
+		scanf("%f %f", &i, &j);
+
+	}
+
+	return 0;
+}
