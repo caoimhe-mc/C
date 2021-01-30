@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int to_pow(int base, int exponent)
+{
+    int result = 1, i;
+    for (i = 0; i < exponent; i++)
+    {
+        result = result*base;
+
+    }
+    return result;
+
+}
+
+int main()
+{
+    int inp1, inp2, result;
+    scanf("%d %d", &inp1, &inp2);
+    result= to_pow(inp1, inp2);
+    printf("result = %d", result);
+}
